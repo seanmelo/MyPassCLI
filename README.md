@@ -1,4 +1,4 @@
-# MyPasswordCLI
+# MyPassCLI
 
 This is a symmetric encryption password manager built in Python
 
