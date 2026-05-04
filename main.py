@@ -10,8 +10,20 @@ def welcome() -> None:
 def main():
     welcome()
     vault = Vault()
-    vault.add_entry("Google", "Joelikescybersecurity", "1337code")
-    print(vault.table)
+    while True:
+        choice = input(
+            "Enter 1 to add a login, 2 to fetch a login, any other input to save and quit"
+        )
+        match choice:
+            case 1:
+                name = input("Enter website name.")
+                username = input(f"Enter username for {name}.")
+                password = input(f"Enter password for {name}.")
+                vault.add_entry(name, input, password)
+            case 2:
+                pass
+            case _:
+                break
 
 
 if __name__ == "__main__":
