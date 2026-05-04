@@ -1,6 +1,6 @@
 # MyPassCLI
 
-# Work In Progress
+## Work In Progress
 
 This is a symmetric encryption password manager built in Python
 
