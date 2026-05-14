@@ -1,6 +1,7 @@
-# import os
+import json
+import os
+
 # from cryptography.fernet import Fernet
-# import json
 from vault import Vault
 
 
@@ -44,7 +45,7 @@ def main():
                 vault.remove_entry(name)
 
             case _:
-                # TODO: add json dumping and encrpytion
+                vault.dump()
                 break
 
 

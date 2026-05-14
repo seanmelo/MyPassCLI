@@ -1,3 +1,6 @@
+import json
+
+
 class Vault:
     def __init__(self):
         self.table = {}
@@ -31,3 +34,8 @@ class Vault:
             return self.table[name]["username"], self.table[name]["password"]
         else:
             raise Exception("Record not found.")
+
+    def dump(self, filepath="vault.json"):
+        if self.table:
+            with open(filepath, "w") as f:
+                json.dump(self.table, f)
